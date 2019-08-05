@@ -52,6 +52,7 @@ namespace MonteCarlo
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Monte Carlo Method");
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("\nEnter a length: ");
