@@ -1,7 +1,10 @@
 # MonteCarlo
 Exercise - Value Types and Arrays
+
 COURSE: ISTA 220
+
 Module Number: 5
+
 Supporting Material: Microsoft Visual C# - Step by Step, Chapters 9 - 10
 
 The following exercises are open book and open note.  You are free to use any written documentation you wish.  These are individual exercises; please do not consult with each other in writing your programs. Submissions should made be no later than the start of the class day. Come to class prepared to discuss, ask questions, and present your solutions.
