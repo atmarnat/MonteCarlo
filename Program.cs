@@ -82,3 +82,15 @@ namespace MonteCarlo
         public double Hypotenuse() => Math.Sqrt(x * x + y * y);
     }
 }
+
+// 1. Why do we multiply the value from step 5 above by 4?
+//    Answer: There is only 1 quadrant calculated with the method, multiplying by 4 helps approximate all 4 quadrants.
+// 2. What do you observe in the output when running your program with parameters of increasing size?
+//    Answer: The larger the input, the more accurate the results.
+// 3. If you run the program multiple times with the same parameter, does the output remain the same? Why or why not?
+//    Answer: The output changes, as random values are used.
+// 4. Find a parameter that requires multiple seconds of run time.What is that parameter? How accurate is the estimated value of ?
+//    Answer: 1,000,000. It is extremely accurate, usually less than 0.000x difference, often much smaller.
+// 5. Research one other use of Monte-Carlo methods. Record it in your exercise submission and be prepared to discuss it in class.
+//    
+
