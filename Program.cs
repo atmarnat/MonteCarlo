@@ -92,5 +92,5 @@ namespace MonteCarlo
 // 4. Find a parameter that requires multiple seconds of run time.What is that parameter? How accurate is the estimated value of ?
 //    Answer: 1,000,000. It is extremely accurate, usually less than 0.000x difference, often much smaller.
 // 5. Research one other use of Monte-Carlo methods. Record it in your exercise submission and be prepared to discuss it in class.
-//    
+//    Another use is in calculating probability. You can randomly generate numbers, apply a constraint to them, and estimate the probability of an event occuring based on these results.
 
