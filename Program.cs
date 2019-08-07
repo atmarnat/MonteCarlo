@@ -4,6 +4,7 @@ namespace MonteCarlo
 {
     class Program
     {
+        //reads the user input, cycles until user enters an int > 0
         static int getNumber()
         {
             int value = 0;
@@ -31,6 +32,9 @@ namespace MonteCarlo
             } while (exit == false);
             return value;
         }
+        //fills up an array with Point objects. each time a point is added, it checks to see if hypotenuse <= 1
+        //if it is, counter++. This is used to estimate pi
+        //Pi = 4 ( count / length ). 
         static double GetPi(int n)
         {
             Point[] points = new Point[n];
@@ -53,12 +57,13 @@ namespace MonteCarlo
         static void Main(string[] args)
         {
             Console.WriteLine("Monte Carlo Method");
+            //loops 4 times, as per the assignment. User should enter, 10, 100, 1000, 10000, but it takes whatever int is given just to test it more
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("\nEnter a length: ");
                 int n = getNumber();
                 Console.Write("Calculated PI is: ");
-                double diff = Math.Abs(1 - GetPi(n) / Math.PI);
+                double diff = Math.Abs(1 - GetPi(n) / Math.PI);  //1-difference, to get a better visualisation of the small difference.
                 Console.WriteLine($"The difference between values is: {diff}");
             }
         }
